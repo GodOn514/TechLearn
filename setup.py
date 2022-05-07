@@ -4,14 +4,15 @@ import os
 import sys
 from shutil import rmtree
 from setuptools import find_packages, setup, Command
+import setuptools
 
-with open("README.md", "r") as fh:
+with open("./README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
     name='TechLearn',  # How you named your package folder
-    packages=['kits'],  # Chose the same as "name"
-    version='1.5',  # Start with a small number and increase it with every change you make
+    packages=setuptools.find_packages(),  # Chose the same as "name"
+    version='1.6',  # Start with a small number and increase it with every change you make
     license='MIT',  # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     description='TestProgram',  # Give a short description about your library
     author='WhereIsTom',  # Type in your name

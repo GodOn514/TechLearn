@@ -1,8 +1,3 @@
-from distutils.core import setup
-import io
-import os
-import sys
-from shutil import rmtree
 from setuptools import find_packages, setup, Command
 import setuptools
 
@@ -12,7 +7,7 @@ with open("./README.md", "r") as fh:
 setup(
     name='techlearn',  # How you named your package folder
     packages=setuptools.find_packages(),  # Chose the same as "name"
-    version='1.9.6',  # Start with a small number and increase it with every change you make
+    version='2.0.1',  # Start with a small number and increase it with every change you make
     license='MIT',  # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     description='TestProgram',  # Give a short description about your library
     author='WhereIsTom',  # Type in your name
